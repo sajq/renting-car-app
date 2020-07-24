@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<!-- Plik typu FXML tworzący widok sceny prezentującej ekran logowania użytkownika do systemu. Wykorzystywany przez kontroler LoginScreenController-->
+
+<AnchorPane prefHeight="505.0" prefWidth="833.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LoginScreenController">
+    <children>
+      <VBox alignment="CENTER" layoutX="101.0" layoutY="44.0" prefHeight="417.0" prefWidth="631.0" AnchorPane.bottomAnchor="44.0" AnchorPane.leftAnchor="101.0" AnchorPane.rightAnchor="101.0" AnchorPane.topAnchor="44.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="99.0" prefWidth="473.0">
+               <children>
+                    <ImageView fitHeight="78.0" fitWidth="345.0" nodeOrientation="INHERIT" opacity="0.95" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@../../../../../RentalCars%20logo.png" />
+                        </image>
+                  </ImageView>
+                    <Label alignment="CENTER" text="easy car renting solutions" textFill="#808080" />
+               </children>
+            </VBox>
+            <HBox alignment="CENTER" prefHeight="44.0" prefWidth="423.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="17.0" prefWidth="55.0" text="Login:" textFill="WHITE" />
+                  <TextField fx:id="loginField" alignment="TOP_LEFT" prefHeight="25.0" prefWidth="212.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="55.0" prefWidth="423.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="17.0" prefWidth="60.0" text="Password:" textFill="WHITE" />
+                  <PasswordField fx:id="passwordField" alignment="TOP_LEFT" prefHeight="25.0" prefWidth="215.0" />
+               </children>
+            </HBox>
+            <VBox alignment="CENTER">
+               <children>
+                  <Label fx:id="informationLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="30.0" prefWidth="260.0" textFill="RED" />
+                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#logInButtonClicked" prefHeight="26.0" prefWidth="49.0" text="Log in" />
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+    </children>
+</AnchorPane>
